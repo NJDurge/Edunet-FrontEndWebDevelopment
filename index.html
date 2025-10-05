@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WishBasket | Trendy Online Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1 class="logo">WishBasket </h1>
+    <nav>
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="electronics">Electronics</button>
+      <button class="filter-btn" data-category="fashion">Fashion</button>
+      <button class="filter-btn" data-category="home">Home</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Your Wishlist, Your Way. Discover Your Favorites ✨</h2>
+    <p>Find products you’ll love, shop effortlessly, and make every purchase a delight at WishBasket!</p>
+  </section>
+
+  <!-- Product Grid -->
+  <section class="products" id="product-list">
+    <!-- Example Product -->
+    <div class="product-card" data-category="electronics">
+      <img src="image\laptop.jpg" alt="Laptop">
+      <h3>GALAXY BOOK PRO </h3>
+      <p>RS.1,95,000</p>
+      <button class="view-btn">View Details</button>
+    </div>
+
+    <div class="product-card" data-category="fashion">
+      <img src="image/shoes.jpg" alt="Shoes">
+      <h3>RUNNING SHOES</h3>
+      <p>Rs.3,875</p>
+      <button class="view-btn">View Details</button>
+    </div>
+
+    <div class="product-card" data-category="home">
+      <img src="image/chair.jpg" alt="Chair">
+      <h3>COMFORT ROCKING CHAIR</h3>
+      <p>Rs.11,500</p>
+      <button class="view-btn">View Details</button>
+    </div>
+
+    <div class="product-card" data-category="electronics">
+      <img src="image/headphone.jpg" alt="Headphones">
+      <h3>NOISE-CANCEL HEADPHONES</h3>
+      <p>Rs.1,500</p>
+      <button class="view-btn">View Details</button>
+    </div>
+
+    <div class="product-card" data-category="fashion">
+      <img src="image/jacket.jpg" alt="Jacket">
+      <h3>WINTER JACKET</h3>
+      <p>Rs.8,877</p>
+      <button class="view-btn">View Details</button>
+    </div>
+
+    <div class="product-card" data-category="home">
+      <img src="image/lamp.jpg" alt="Lamp">
+      <h3>MODERN LAMP</h3>
+      <p>Rs.2,000</p>
+      <button class="view-btn">View Details</button>
+    </div>
+
+    <div class="product-card" data-category="electronics">
+      <img src="image/watch.jpg" alt="Watch">
+      <h3>LUXURY WATCH</h3>
+      <p>Rs.6,000</p>
+      <button class="view-btn">View Details</button>
+    </div>
+
+    <div class="product-card" data-category="fashion">
+      <img src="image/BAG.jpg" alt="Bag">
+      <h3>HANDBAG</h3>
+      <p>Rs.4,300</p>
+      <button class="view-btn">View Details</button>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal" id="product-modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modal-img" src="" alt="Product">
+      <h3 id="modal-title"></h3>
+      <p id="modal-price"></p>
+      <p id="modal-desc">This is a premium product designed to give you the best experience.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 WishBasket | Where Quality Meets Convenience.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
